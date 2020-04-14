@@ -16,11 +16,24 @@ import "./App.css";
 
 const App = () => {
   const [posts, setPosts] = useState(DummyData)
+  const [searchTerm, setSearchTerm] = useState('')
+
+  const getFilteredPosts = () => {
+    const term = searchTerm.trim()
+    return posts.filter(post => {
+      if(!term){
+        return post
+      } else if (post.username.toLowerCase().includes(term.toLowerCase())){
+        return post
+      }
+    })
+  }
+
   return (
     <div className="App">
       {/* Add imported components here to render them */}
-      <SearchBar />
-      <PostsPage posts={posts} />
+      <SearchBar setSearchTerm={setSearchTerm}/>
+      <PostsPage posts={getFilteredPosts()} />
     </div>
   );
 };
