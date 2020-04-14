@@ -44,6 +44,31 @@ const dummyData = [
                 text: "It that injustice"
             }
         ]
+    },
+    {
+        username: "smalltrucks",
+        thumbnailUrl: 'https://media.istockphoto.com/vectors/circle-icon-truck-small-vector-id907524538?k=6&m=907524538&s=612x612&w=0&h=vsxDysZBRWndWhz3oZyOwszkD-zvw-Fv-5D6a7HdK7A=',
+        imageUrl: 'https://images.unsplash.com/photo-1585542093591-95ea4d3f237a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1915&q=80',
+        likes: 50007,
+        timestamp: "June 17th 2019, 10:17:39 pm",
+        comments: [
+            {
+                username: "smalltrucks",
+                text: "It's a beauty"
+            },
+            {
+                username: "coolguy",
+                text: "woah"
+            },
+            {
+                username: "borschtsoup",
+                text: "What a day"
+            },
+            {
+                username: "noteven",
+                text: "no way hose A"
+            }
+        ]
     }
 ];
 
