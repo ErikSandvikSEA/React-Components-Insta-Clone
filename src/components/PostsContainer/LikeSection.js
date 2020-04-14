@@ -5,10 +5,11 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons'
 
-const LikeSection = props => {
-  // console.log(props)
-  const [likes, setLikes] = useState(props.props.post.likes)
+const LikeSection = ({userLikes}) => {
+  console.log(userLikes)
+  const [likes, setLikes] = useState(userLikes)
   const increaseLike = (event) => {
+    event.target.classList.add('red-background')
     setLikes(likes + 1)
   }
   return (
