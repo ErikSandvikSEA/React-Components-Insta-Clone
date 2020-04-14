@@ -7,13 +7,12 @@ import "./Posts.css";
 
 
 const PostsPage = ({ posts }) => {
-  debugger
   // set up state for your data
   return (
     <div className="posts-container-wrapper">
       {
-       posts.map(post => {
-         return <Post key={post.thumbnailURL} post={post}/>
+       posts.map(post=> {
+         return <Post key={post.imageUrl} post={post}/>
       })
     }
     </div>
